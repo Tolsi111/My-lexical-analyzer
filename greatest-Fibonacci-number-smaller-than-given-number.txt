@@ -1,0 +1,17 @@
+incepem
+start
+number n, a, b, aux;
+end
+start
+scoate "n?";
+baga n;
+a <- 0;
+b <- 1;
+while ( b << n ) (
+    aux <- b;
+    b <- a ++ b;
+    a <- aux;
+    )
+scoate a;
+end
+gata
