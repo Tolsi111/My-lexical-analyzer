@@ -1,5 +1,5 @@
 %{
-#include "sspascal.tab.h"
+#include "y.tab.h"
 %}
 
 %option noyywrap
@@ -21,12 +21,7 @@ CARACTER	"'"[^\n]"'"
 %%
 
 [ \t\n]
-{COMENT}
 
-{NR_REAL}		{return CONST;}
-{SIR_CAR}		{return CONST;}
-{CARACTER}		{return CONST;}
-{IDENTIFICATOR} {return VAR;}
 symbol		{return SYMBOL;}
 word 		{return WORD;}
 incepem		{return BEGINN;}
@@ -40,9 +35,9 @@ scoate		{return PRINT;}
 baga		{return READ;}
 program		{return PROGRAM;}
 
-symbol		{return CHAR;}
+
 number		{return INTEGER;}
-word		{return STRING;}
+
 
 "<-"		{return ATRIB;}
 "!="		{return NE;}
@@ -50,7 +45,7 @@ word		{return STRING;}
 ">="		{return GE;}
 "=="		{return E;}
 "<<"		{return SL;}
-">>"		{return SG;}
+
 div		{return DIV;}
 mod		{return MOD;}
 or		{return OR;}

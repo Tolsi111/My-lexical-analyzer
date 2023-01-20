@@ -1,5 +1,8 @@
 %{
+#include <string.h>
 #include <stdio.h>
+int yylex(void);
+int yyerror(char* s);
 #include <stdlib.h>
 #define YYDEBUG 1
 
