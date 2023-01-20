@@ -67,7 +67,7 @@ double pop()
 %%
 prog_sursa:	PROGRAM ID ';' bloc '.'
 		;
-bloc:		sect_const sect_var instr_comp
+bloc:		BEGINN sect_const sect_var instr_comp GATA
 		;
 sect_const:	/* empty */
 		| CONST lista_const
@@ -194,6 +194,9 @@ op_rel:		'='
 		| NE
 		| LE
 		| GE
+		| E
+		| SL
+		| SE
 		;
 instr_while:	WHILE '(' conditie ')' '(' instr ')'
 		;

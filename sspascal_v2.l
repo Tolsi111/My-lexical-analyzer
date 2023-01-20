@@ -34,18 +34,13 @@ while		{return WHILE;}
 scoate		{return PRINT;}
 baga		{return READ;}
 program		{return PROGRAM;}
-
-
 number		{return INTEGER;}
-
-
 "<-"		{return ATRIB;}
 "!="		{return NE;}
 "<="		{return LE;}
 ">="		{return GE;}
 "=="		{return E;}
 "<<"		{return SL;}
-
 div		{return DIV;}
 mod		{return MOD;}
 or		{return OR;}
